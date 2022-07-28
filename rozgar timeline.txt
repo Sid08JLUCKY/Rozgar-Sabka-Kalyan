@@ -1,0 +1,8 @@
+name
+domain
+ui/ux
+mailid
+frontend
+database
+backend
+publicity

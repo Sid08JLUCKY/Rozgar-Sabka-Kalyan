@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="..//Styles/myaccount.css">
+	<link rel="stylesheet" href="..//Styles/manageadd.css">
+	<link rel="stylesheet" href="..//Styles/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<link rel="icon" type="image" href="..//Images/logo.png">
+	<script src="https://kit.fontawesome.com/247795ac81.js" crossorigin="anonymous"></script>
+	<title>Rozgar-Manage Addresses</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a href="../index.html"  class="navbar-brand navy" id="roz_logo_tag">
+              <div id="roz_logo">
+                  <img src="..//Images/logo.png" id="logo">
+                  <h3 id="roz">Rozgar</h3>
+              </div>
+              <div id="tag">
+                  Sabka Kalyan...
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="togglerbtn"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><form class="d-flex mx-5" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for Services" aria-label="Search">
+              <button class="btn navy bord" type="submit">Search</button>
+            </form></li>
+      
+              <li class="nav-item dropdown">
+                <div data-bs-toggle="dropdown" aria-expanded="false" id="searchstate">
+                      <select name="state" id="state" class="form-control" autocomplete="on">
+                          <option value="">--Select State--</option>
+                          <option value="Andhra Pradesh">Andhra Pradesh</option>
+                          <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                          <option value="Assam">Assam</option>
+                          <option value="Bihar">Bihar</option>
+                          <option value="Chandigarh">Chandigarh</option>
+                          <option value="Chhattisgarh">Chhattisgarh</option>
+                          <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                          <option value="Daman and Diu">Daman and Diu</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Lakshadweep">Lakshadweep</option>
+                          <option value="Puducherry">Puducherry</option>
+                          <option value="Goa">Goa</option>
+                          <option value="Gujarat">Gujarat</option>
+                          <option value="Haryana">Haryana</option>
+                          <option value="Himachal Pradesh">Himachal Pradesh</option>
+                          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                          <option value="Jharkhand">Jharkhand</option>
+                          <option value="Karnataka">Karnataka</option>
+                          <option value="Kerala">Kerala</option>
+                          <option value="Madhya Pradesh">Madhya Pradesh</option>
+                          <option value="Maharashtra">Maharashtra</option>
+                          <option value="Manipur">Manipur</option>
+                          <option value="Meghalaya">Meghalaya</option>
+                          <option value="Mizoram">Mizoram</option>
+                          <option value="Nagaland">Nagaland</option>
+                          <option value="Odisha">Odisha</option>
+                          <option value="Punjab">Punjab</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                          <option value="Sikkim">Sikkim</option>
+                          <option value="Tamil Nadu">Tamil Nadu</option>
+                          <option value="Telangana">Telangana</option>
+                          <option value="Tripura">Tripura</option>
+                          <option value="Uttar Pradesh">Uttar Pradesh</option>
+                          <option value="Uttarakhand">Uttarakhand</option>
+                          <option value="West Bengal">West Bengal</option>
+                      </select>
+                  </div>
+              </li>
+      <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navy" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="myaccount.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
+              <li><a class="dropdown-item" href="servicelogin.html"><i class="fas fa-sitemap"></i>&nbsp;&nbsp;Provide Service</a></li>
+              <li><a class="dropdown-item" href="servicelogin.html"><i class="fas fa-puzzle-piece"></i>&nbsp;&nbsp;My Services</a></li>
+              <li><a class="dropdown-item" href="servicelogin.html"><i class="fas fa-clipboard"></i>&nbsp;&nbsp;Buy Packages</a></li>
+              <li><a class="dropdown-item" href="servicelogin.html"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;Help</a></li>
+              <li><a class="dropdown-item" href="servicelogin.html"><i class="fas fa-cogs"></i>&nbsp;&nbsp;Settings</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-download"></i>&nbsp;&nbsp;Download App</a></li>
+              <li><a class="dropdown-item" href="login.html"><i class="fas fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                </ul>
+              </li>
+      
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- d-flex justify-content-between flex-row mx-auto  me-auto mb-2 mb-lg-0-->
+      <!-- <nav id="navigation"> -->
+      <nav class="navbar navbar-expand-md bg-info">
+        <div class="container">
+            <ul class="navbar-nav d-flex justify-content-between flex-row mx-auto mb-2" id="secondNav">
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link  navy" href="teacher.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Teacher
+                </a>
+                <ul class="list list1 dropdown-menu">
+                  <li><a href="teacherclass.html" class="dropdown-item" rel="noopener noreferrer">Class 11-12 tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Jee Tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Neet Tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Class 1-5 tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Class 6-10 tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Coding and Development Tutor</a></li>
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Vedic Maths and Abacus Tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Art and Craft Tutor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Music and Dance Tutor</a></li>
+                </ul>
+              </li>
+      
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link navy " href="homeRepairing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Home Repairing
+                </a>
+                <ul class="list list1 dropdown-menu">
+                  <li><a href="electrician.html" class="dropdown-item"rel="noopener noreferrer">Electrician</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Plumber</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Painter</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Carpenter</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Cleaner</a></li>
+      
+                </ul>
+              </li>
+      
+               <li class="nav-item dropdown">
+                <a class="nav-link navy " href="homeRepairing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mechanic and Repair
+                </a>
+                <ul class="list list1 dropdown-menu">
+                  <li><a href="carMechanic.html" class="dropdown-item"rel="noopener noreferrer">Car/Bike Mechanic</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Truck/Bus Mechanic</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Mobile/Laptop Repair</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">AC Service</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Sumersible Service</a></li>
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">TV repair</a></li>
+      
+                </ul>
+              </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link navy " href="other.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Others
+                </a>
+                <ul class="list list1 dropdown-menu">
+                  <li><a href="tailor.html" class="dropdown-item"rel="noopener noreferrer">Tailor</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Driver</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Cobler</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Watchman</a></li>
+      
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Barber</a></li>
+                      <li><a href="#" class="dropdown-item"rel="noopener noreferrer">Personnel</a></li>
+      
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+<!-- ***************************************************************************************************** -->
+
+
+
+
+
+
+
+
+
+
+<div id="menu" onclick="show()" style="color: green; font-size: 2rem; cursor: pointer; background-color: white; width: 10%;"><i class="fas fa-bars"></i></div>
+<div id="greet_nav_current">
+<div id="greet_nav">
+
+<div id="greet">
+	<span  id="photo"><i class="fas fa-user-circle"></i></span><span id="content">Hello User</span>
+</div>
+<nav id="vertical_navbar">
+	<ul id="Account_settings" class="acc"><i class="fas fa-user"></i>&nbsp;&nbsp;Edit Profile
+	<a href="myaccount.html"><li>Profile Information</li></a>
+	<a href="#"><li class="activenav">Manage Address</li></a>
+	<a href="#"><li>Profile Photo</li></a>
+	</ul>
+
+	<ul id="Service_Details" class="acc"><i class="fas fa-network-wired"></i>&nbsp;&nbsp;Service Details
+	<a href="#"><li>Your Services</li></a>
+	<a href="#"><li>Buy Packages</li></a>
+	</ul>
+
+	<ul id="MyStuff" class="acc"><i class="fas fa-inbox"></i>&nbsp;&nbsp;Settings
+	<a href="#"><li>Help</li></a>
+	<a href="#"><li>Settings</li></a>
+	<a href="#"><li>Download App</li></a>
+	</ul>
+
+
+	<ul id="Logout" class="acc">
+		<a href="login.html"><li><i class="fas fa-power-off"></i>&nbsp;&nbsp;Log Out</li></a>
+	</ul>
+
+</nav>
+</div>
+<div id="Profile_info" class="current">
+	<div id="personal_info" class="pro">
+		<h3>Manage Addresses</h3><br><br>
+		<a href="#" onclick="change1()" id="edit1"><i class="fas fa-plus"></i>&nbsp;&nbsp;ADD A NEW ADDRESS</a><br>
+		<form action="#" method="post" id="add">
+			<input type="text" name="fname" id="fname" placeholder="Name">&nbsp;&nbsp;
+			<input type="number" name="mobile" id="mobno" placeholder="Mobile Number"><br><br>
+			<input type="number" name="pincode" id="pincode" placeholder="Pincode">&nbsp;&nbsp;
+			<input type="text" name="locality" id="locality" placeholder="Locality"><br><br>
+			<textarea placeholder="Address(Area & Street)"></textarea><br><br>
+			<input type="text" name="cdt" id="cdt" placeholder="City/District/Town">&nbsp;&nbsp;
+
+		<select name="state" id="state" class="form-control"autocomplete="on">
+			<option value="">--Select State--</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+		<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+		<option value="Assam">Assam</option>
+		<option value="Bihar">Bihar</option>
+		<option value="Chandigarh">Chandigarh</option>
+		<option value="Chhattisgarh">Chhattisgarh</option>
+		<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+		<option value="Daman and Diu">Daman and Diu</option>
+		<option value="Delhi">Delhi</option>
+		<option value="Lakshadweep">Lakshadweep</option>
+		<option value="Puducherry">Puducherry</option>
+		<option value="Goa">Goa</option>
+		<option value="Gujarat">Gujarat</option>
+		<option value="Haryana">Haryana</option>
+		<option value="Himachal Pradesh">Himachal Pradesh</option>
+		<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+		<option value="Jharkhand">Jharkhand</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Kerala">Kerala</option>
+		<option value="Madhya Pradesh">Madhya Pradesh</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Manipur">Manipur</option>
+		<option value="Meghalaya">Meghalaya</option>
+		<option value="Mizoram">Mizoram</option>
+		<option value="Nagaland">Nagaland</option>
+		<option value="Odisha">Odisha</option>
+		<option value="Punjab">Punjab</option>
+		<option value="Rajasthan">Rajasthan</option>
+		<option value="Sikkim">Sikkim</option>
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Telangana">Telangana</option>
+		<option value="Tripura">Tripura</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="Uttarakhand">Uttarakhand</option>
+		<option value="West Bengal">West Bengal</option>
+	</select><br><br>
+
+
+			<input type="text" name="landmark" id="landmark" placeholder="Landmark(Optional)">&nbsp;&nbsp;
+			<input type="number" name="altmobile" id="altmobno" placeholder="Alternate Phone(Optional)"><br><br>
+
+			<p style="font-size: 1.1em; background-color: white; border: 1px solid black; border-radius: 10px; width: 62%; color: grey;">Address Type:<br><br>
+			<label for="Home" style="color: black;">Home</label>
+			<input type="radio" name="Address" id="Home" value="Home">&nbsp;
+			<label for="Work" style="color: black;">Work</label>
+			<input type="radio" name="Address" id="Work" value="Work"></p><br><br><br>
+			<input type="submit" name="submit" id="submit" value="SAVE">&nbsp;&nbsp;
+			<a href="#" onclick="change2()" id="edit2">Cancel</a>
+		</form>
+<br><br><br>
+		<div id="current_add">
+			<p><b>Dr. Rajesh&nbsp;&nbsp;&nbsp;&nbsp;+98123456789</b></p><br>
+			<p>Hostel No. 10, BIT Mesra, Ranchi, Jharkhand-835215</p>
+			
+		</div>
+	</div>
+	
+
+</div>
+</div>
+
+	<br><br><br><br><br><br><br><br>
+<footer>
+    <div id="all_lists">
+        <div class="flist">
+            <ul>
+                ABOUT US
+                <li><a href="#">About Rozgar Group</a></li><!--Aim-->
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li><!--Customer Care-->
+                <li><a href="#">Rozgar Stories</a></li><!--Achievement in earning-->
+            </ul>
+        </div>
+
+        <div class="flist">
+            <ul>
+                HELP
+                <li><a href="#">Work with Us</a></li><!--details of payments-->
+                <li><a href="#">How to Earn</a></li><!---->
+                <li><a href="#">FAQ</a></li><!--Customer care-->
+            </ul>
+        </div>
+
+        <div class="flist">
+            <ul>
+                POLICY
+                <li><a href="#">Terms of Use</a></li><!---->
+                <li><a href="#">Security</a></li><!---->
+                <li><a href="#">Privacy</a></li><!---->
+            </ul>
+        </div>
+        <hr>
+        <div class="flist add">
+
+                ADDRESS:
+                <p>Rozgar Private Limited,<br>Birla Institute of Technology<br>Mesra, Ranchi-835215,<br>Jharkhand, India
+        </div>
+    </div>
+    <br><br><br>
+    <div id="tc">
+        <div>
+            <i class="far fa-copyright"></i> 2021-2022 Rozgar.com
+        </div>
+
+        <div id="footericons">
+            <a href="" title="Facebook"><i class="fab fa-facebook-square"></i></a>&nbsp;
+            <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>&nbsp;
+            <a href="#" title="Mail"><i class="fas fa-envelope"></i></a>&nbsp;
+            <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>&nbsp;
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>&nbsp;
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>&nbsp;
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="..//Scripts/home.js"></script>
+	<script src="..//Scripts/manageadd.js"></script>
+</body>
+</html>

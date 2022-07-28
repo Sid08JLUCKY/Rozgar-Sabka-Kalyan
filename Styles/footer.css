@@ -1,0 +1,20 @@
+footer{
+	background-color: #068DFE;
+	color: #040886 ;
+	font-weight: bolder;
+	margin-top: auto;
+	width: 100%;
+}
+footer a{
+	color: #040886 ;
+	cursor: pointer;
+}
+#copy{
+	font-size: 90%;
+}
+#copy p{
+	float: right;
+}
+#icons{
+	font-size: 100%;
+}

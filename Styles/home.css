@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+::selection{
+	background-color: white;
+	color: blue;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #E4E8E7 !important;
+	font-family: "Times New Roman", "Arial", "sans-serif","Calibri";
+}
+/*------------------------------------------------------------------------*/
+#roz_logo_tag{
+	display: flex;
+	flex-direction: column;
+}
+#roz_logo{
+	margin-left: 1%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+}
+#logo{
+	width: 10%;
+}
+#roz{
+	font-size: 2rem;
+}
+#tag{
+	margin-left: 20%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	align-self: flex-start;
+	margin-top: -2%;
+}
+/*------------------------------------------------------------------------*/
+#secondNav{
+	display: flex !important;
+	flex-direction: row !important;
+	text-align: center !important;
+	justify-content: space-evenly !important;
+	font-size: 1.2rem !important;
+}
+.navy{
+	color: #040886 !important;
+	font-weight: bolder !important;
+}
+.bord{
+	border: 2px solid #040886 !important;
+}
+#togglerbtn{
+	border-color: black !important;
+}
+.custom-toggler.navbar-toggler {
+  border-color: black;
+} 
+
+/*------------------------------------------------------------------------*/
+footer{
+	background-color: #5bc0de;
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	width: 100%;
+}
+#all_lists,#tc{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #040886;
+	font-weight: bolder;
+}
+.flist ul{
+	padding-top: 5%;
+	margin: 1%;
+	width: 100%;
+	list-style: none;
+	color: #040886;
+	font-size: 1.1rem;
+
+}
+.flist ul li a{
+	color: #040886;
+	font-size: 1rem;
+	text-decoration: none;
+}
+.flist ul li a:hover{
+	text-decoration: underline;
+}
+#tc{
+	padding: 1%;
+}
+#footericons a{
+	color: #040886;
+	font-size: 1.1rem;
+}
+@media screen and (max-width: 925px){
+	.add,footer hr{
+		display: none;
+	}
+	#secondNav{
+		flex-direction: column !important;
+		text-align: center !important;
+	}
+}
+
+

@@ -1,0 +1,193 @@
+.topBox{
+    display: flex;
+    flex-direction: row;
+    margin: 10% 2%;
+}
+
+.sideBarLeft{
+    height: 480px;
+    overflow: scroll;
+    padding: 1%;
+    border-radius: 2%;
+    background-color: rgba(199, 199, 199, 0.472);;
+}
+.sideBarLeft ul{
+    list-style: none;
+}
+.sideBarLeft ul li{
+    padding-bottom: 10%;
+    cursor: pointer;
+}
+
+
+.sideBarRight{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 2%;
+}
+
+/* topic of the right box */
+.topic{
+    background-color: #04D713 ;
+    padding: 1%;
+    width: 100%;
+    color: #280130 ;
+}
+
+.topic:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+/* the subboxes of the right box */
+.choice{
+    background-color: #04D713 ;
+    color: #280130 ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    width: 100%;
+}
+
+.choice p{
+    padding: 1%;
+}
+
+
+.choice p{
+    margin-bottom: 0%;
+}
+
+.service1{
+    margin-top: 0%;
+}
+
+.service2,.service3{
+    margin-top: -1.5%;
+}
+
+/* service1 part */
+.service1 img{
+    width: 10%;
+    height: 80%;
+    margin: 1%;
+    float: left;
+}
+
+.service1 .para1{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding-left: 15%;
+}
+
+
+.service1 .para2{
+    margin: 0%;
+    padding-left: 16%;
+}
+
+
+/* service2 part */
+.service2 img{
+    float: left;
+    width: 10%;
+    height: 80%;
+    margin: 1%;
+}
+
+.service2 .para3{
+    /* border: 1px solid; */
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding-left: 15%;
+}
+
+.service2 .para4{
+    margin: 0%;
+
+    padding-left: 16%;
+}
+
+/* service 3 part */
+.service3 img{
+    float: left;
+    width: 10%;
+    height: 80%;
+    margin: 1%;
+}
+
+.service3 .para5{
+    /* border: 1px solid; */
+
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding-left: 15%;
+}
+
+.service3 .para6{
+    margin: 0%;
+    padding-left: 16%;
+}
+
+/* hovering part */
+/* hoverint of service1 */
+.service1:hover,.service2:hover,.service3:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+/* vew More part */
+.viewMore{
+    margin-top: 0.2%;
+    padding: 1%;
+    background-color: green;
+    color: #280130 ;
+    text-align: center;
+}
+
+.viewMore:hover{
+    color: blue;
+    background-color: lightgreen;
+}
+
+/* issue facing block */
+
+.issueFacing{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.mainTopic{
+    background-color:rgba(199, 199, 199, 0.472);
+    padding: 1%;
+    margin-bottom: 0%;
+}
+.ques1{
+    background-color:rgba(199, 199, 199, 0.472);
+    margin-bottom: 0.1%;
+}
+
+.q1para1{
+    /* margin: 0%; */
+    margin-left: 2%;
+}
+
+.q1para2{
+    margin-left: 2%;
+    /* font-size: 75%; */
+    color: rgba(0, 0, 0, 0.657);
+}
+
+.ques1:hover{
+    background-color: rgba(48, 172, 165, 0.479);
+}
+
+
+
+
+
+
